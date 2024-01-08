@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <h1 class="header">STOPWATCH</h1>
+        </div>
+        
+        <div class="wrapper">
+            <p>
+                <span class="hour text" id="hour">00</span>
+                <span class="colon">:</span>
+                <span class="minute text" id="min">00</span>
+                <span class="colon">:</span>
+                <span class="seconds text" id="seconds">00</span>
+                <span class="colon">:</span>
+                <span class="tens text" id="tens">00</span>
+            </p>
+        </div>
+        <div class="buttons" id="btn-div">
+            <button class="btn-start" id="start" onclick="buttonOp()">START</button>
+            <button class="btn-reset" id="reset" onclick="resetTimer()">RESET</button>
+        </div>
+    </div>
+
+    <div class="container-fluid justify-content-center py-2">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div id="lapTimesContainer" class="lap-times-container">
+                    <!-- Lap times will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>
